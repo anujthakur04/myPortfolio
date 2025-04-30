@@ -14,7 +14,7 @@ function Home() {
         <div>
             <Hero />
             <Footer />
-            <Footer />
+            {/* <Footer /> */}
             {/* <div className="container mx-auto">
 
             </div> */}

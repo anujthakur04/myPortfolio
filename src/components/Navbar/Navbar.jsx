@@ -79,12 +79,16 @@ function Navbar() {
     };
 
     return (
-        <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 backdrop-filter 
-                backdrop-blur-md 
-                bg-opacity-90 ${navbarBgColor}`}>
+        <nav
+            className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 backdrop-filter 
+                    backdrop-blur-md 
+                    bg-opacity-90 ${navbarBgColor}`}
+        >
             <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-                <h1 className="text-3xl font-light cursor-pointer flex items-center text-white" onClick={() => handleNavigateHome('')}>
-                    {/* <img src={logo} alt="Logo" className="h-9 mr-2" /> */}
+                <h1
+                    className="text-3xl font-light cursor-pointer flex items-center text-white"
+                    onClick={() => handleNavigateHome("")}
+                >
                     MyResume
                 </h1>
 
@@ -96,30 +100,55 @@ function Navbar() {
                 </div>
 
                 {/* Nav Menu */}
-                <ul className={`lg:flex lg:flex-row lg:space-x-8 items-center ${isMenuOpen ? 'flex' : 'hidden'}
-                            lg:block absolute lg:static left-0 top-16 lg:top-0 w-full lg:w-auto bg-tealish lg:bg-transparent py-4 lg:py-0 transition-all duration-300 flex-col lg:flex-row space-y-4 lg:space-y-0`}>
-                    <li
-                        className="font-light cursor-pointer text-white hover:text-gray-200 transition"
-                        onClick={() => handleMenuClick('services-mob')}
+                <ul
+                    className={`lg:flex lg:flex-row lg:space-x-8 items-center ${isMenuOpen ? "flex" : "hidden"
+                        }
+                                lg:block absolute lg:static left-0 top-16 lg:top-0 w-full lg:w-auto bg-tealish lg:bg-transparent py-4 lg:py-0 transition-all duration-300 flex-col lg:flex-row space-y-4 lg:space-y-0`}
+                >
+                    <a
+                        href="https://www.linkedin.com/in/anuj-thakur-a58b2a21b/"
+                        className="flex items-center font-light cursor-pointer text-white hover:text-gray-200 transition"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+                            alt="LinkedIn Logo"
+                            className="w-5 h-5 mr-2"
+                        />
                         LinkedIn
-                    </li>
+                    </a>
 
-                    <li
-                        className="font-light cursor-pointer text-white hover:text-gray-200 transition"
-                        onClick={() => handleMenuClick('github')}
+                    <a
+                        href="https://github.com/anujthakur04/"
+                        className="flex items-center font-light cursor-pointer text-white hover:text-gray-200 transition"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
+                        <img
+                            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                            alt="GitHub Logo"
+                            className="w-5 h-5 mr-2"
+                        />
                         GitHub
-                    </li>
+                    </a>
+
+                    <a
+                        href="https://leetcode.com/u/anujthakur462000/"
+                        className="flex items-center font-light cursor-pointer text-white hover:text-gray-200 transition"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+                            alt="LeetCode Logo"
+                            className="w-5 h-6 mr-2"
+                        />
+                        Leetcode
+                    </a>
 
                     <li
-                        className="font-light cursor-pointer text-white hover:text-gray-200 transition"
-                        onClick={() => handleMenuClick('projects')}
-                    >
-                        Leetcode
-                    </li>
-
-                    <li className="relative group font-light cursor-pointer text-white hover:text-gray-200 transition"
+                        className="relative group font-light cursor-pointer text-white hover:text-gray-200 transition"
                         onClick={handleNavigateBlog}
                     >
                         <span>Projects</span>
@@ -136,6 +165,7 @@ function Navbar() {
                 </ul>
             </div>
         </nav>
+
     );
 }
 

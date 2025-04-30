@@ -14,7 +14,7 @@ function Hero() {
                 <div className="w-full h-screen bg-gray-900 flex items-center justify-center">
                     {/* Text Centered */}
                     <div className="text-center">
-                        <Animator animation={batch(Sticky(), FadeIn(), MoveOut(0, 500))}>
+                        <Animator animation={batch(Sticky(), FadeIn(), MoveOut(0, -500))}>
                             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
                                 Hello, Stalker!
                             </h1>
