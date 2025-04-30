@@ -11,19 +11,28 @@ const timelineElements = [
     {
         key: 1,
         icon: "work",
-        date: "January 2023",
-        title: "Started New Job",
-        location: "New York",
+        date: "November 2023",
+        title: "FormulaQ Solutions Pvt Ltd",
+        location: "Hyderabad, Telangana",
         description: "Working on amazing projects!",
         buttonText: "Learn More",
     },
     {
         key: 2,
         icon: "school",
+        date: "June 2023",
+        title: "Vivekananda Institute of Professional Studies",
+        location: "Delhi",
+        description: "Masters in Computer Applications.",
+        buttonText: "View Details",
+    },
+    {
+        key: 3,
+        icon: "school",
         date: "June 2021",
-        title: "Graduated College",
-        location: "Boston",
-        description: "Completed a degree in Computer Science.",
+        title: "Jagan Institute of Management Studies",
+        location: "Delhi",
+        description: "Bachelors in Computer Application.",
         buttonText: "View Details",
     },
 ];
@@ -53,7 +62,7 @@ function Hero() {
         <ScrollContainer>
             {/* First Page with Carousel */}
             <ScrollPage page={0}>
-                <div className="w-full h-screen bg-gray-900 flex items-center justify-center">
+                <div className="w-full h-screen bg-gray-800 flex items-center justify-center">
                     {/* Carousel with Animation */}
                     <div className="text-center">
                         <AnimatePresence mode="wait">
@@ -64,7 +73,7 @@ function Hero() {
                                 animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, y: -30 }}
                                 transition={{
-                                    duration: 0.8,
+                                    duration: 0.4,
                                     ease: "easeInOut",
                                 }}
                             >
@@ -107,7 +116,7 @@ function Hero() {
             </ScrollPage>
 
             {/* Third Page */}
-            <ScrollPage page={2}>
+            {/* <ScrollPage page={2}>
                 <Animator animation={zoomInScroll}>
                     <div className="w-full h-screen bg-gray-900 flex items-center justify-center">
                         <div className="text-center">
@@ -117,40 +126,42 @@ function Hero() {
                         </div>
                     </div>
                 </Animator>
-            </ScrollPage>
+            </ScrollPage> */}
 
             {/* Timeline Section */}
-            <ScrollPage page={3}>
-                <div className="bg-gray-800 py-10">
-                    <h1 className="text-3xl font-bold text-white text-center mb-8">Timeline</h1>
-                    <VerticalTimeline>
-                        {timelineElements.map((element) => {
-                            const isWorkIcon = element.icon === "work";
-                            return (
-                                <VerticalTimelineElement
-                                    key={element.key}
-                                    date={element.date}
-                                    dateClassName="date"
-                                    iconStyle={{
-                                        background: isWorkIcon ? "#06D6A0" : "#f9c74f",
-                                    }}
-                                    icon={<img src={isWorkIcon ? workIcon : schoolIcon} alt="icon" style={{ width: "100%", height: "100%" }} />}
-                                >
-                                    <h3 className="vertical-timeline-element-title">{element.title}</h3>
-                                    <h5 className="vertical-timeline-element-subtitle">{element.location}</h5>
-                                    <p id="description">{element.description}</p>
-                                    {element.buttonText && (
-                                        <a
-                                            className={`button ${isWorkIcon ? "workButton" : "schoolButton"}`}
-                                            href="/"
-                                        >
-                                            {element.buttonText}
-                                        </a>
-                                    )}
-                                </VerticalTimelineElement>
-                            );
-                        })}
-                    </VerticalTimeline>
+            <ScrollPage page={2}>
+                <div className="w-full bg-gray-800 mx-auto">
+                    <h1 className="text-4xl font-bold text-white text-center mb-12 ">Timeline</h1>
+                    <Animator animation={textAnimation}>
+                        <VerticalTimeline className="mb-10">
+                            {timelineElements.map((element) => {
+                                const isWorkIcon = element.icon === "work";
+                                return (
+                                    <VerticalTimelineElement
+                                        key={element.key}
+                                        date={element.date}
+                                        dateClassName="date text-white"
+                                        iconStyle={{
+                                            background: isWorkIcon ? "#06D6A0" : "#f9c74f",
+                                        }}
+                                        icon={<img src={isWorkIcon ? workIcon : schoolIcon} alt="icon" style={{ width: "100%", height: "100%" }} />}
+                                    >
+                                        <h3 className="vertical-timeline-element-title">{element.title}</h3>
+                                        <h5 className="vertical-timeline-element-subtitle">{element.location}</h5>
+                                        <p id="description">{element.description}</p>
+                                        {element.buttonText && (
+                                            <a
+                                                className={`button ${isWorkIcon ? "workButton" : "schoolButton"}`}
+                                                href="/"
+                                            >
+                                                {element.buttonText}
+                                            </a>
+                                        )}
+                                    </VerticalTimelineElement>
+                                );
+                            })}
+                        </VerticalTimeline>
+                    </Animator>
                 </div>
             </ScrollPage>
         </ScrollContainer>
