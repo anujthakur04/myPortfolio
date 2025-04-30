@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "title": "Introduction to Neural Networks",
+        "date": "Aug 12, 2024",
+        "category": "Neural Networks",
+        "image": "./Images/Blog-1.png"
+    },
+    {
+        "id": 2,
+        "title": "Introduction to Artificial Intelligence",
+        "date": "Aug 12, 2024",
+        "category": "AI",
+        "image": "./Images/Blog-2.png"
+    },
+    {
+        "id": 3,
+        "title": "Introduction to Deep Learning",
+        "date": "Aug 12, 2024",
+        "category": "Deep Learning",
+        "image": "./Images/Blog-3.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Introduction to Machine Learning - BEGINNER LEVEL",
+        "date": "Aug 12, 2024",
+        "category": "Machine Learning",
+        "image": "./Images/Blog-4.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Supervised Learning",
+        "date": "Aug 12, 2024",
+        "category": "Machine Learning",
+        "image": "./Images/supervised-learning.png"
+    },
+    {
+        "id": 6,
+        "title": "Unsupervised Learning",
+        "date": "Sept 11, 2024",
+        "category": "Machine Learning",
+        "image": "./Images/unsupervised-learning.png"
+    },
+    {
+        "id": 7,
+        "title": "Introduction to FeedForward Neural Networks",
+        "date": "Sep 6, 2024",
+        "category": "Neural Networks",
+        "image": "./Images/FNNs.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Introduction to Recurrent Neural Networks",
+        "date": "Sep 6, 2024",
+        "category": "Neural Networks",
+        "image": "./Images/RNNs.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Introduction to Convolutional Neural Networks",
+        "date": "Sep 6, 2024",
+        "category": "Neural Networks",
+        "image": "./Images/CNNs.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Introduction to Generative Adversarial Networks",
+        "date": "Sep 6, 2024",
+        "category": "Neural Networks",
+        "image": "./Images/GANs.jpg"
+    },
+    {
+        "id": 11,
+        "title": "Introduction to Salesforce Einstein",
+        "date": "Sep 16, 2024",
+        "category": "Salesforce",
+        "image": "./Images/salesforce-einstein-ai.png"
+    },
+    {
+        "id": 12,
+        "title": "Introduction to Sales Cloud Einstein",
+        "category": "Salesforce",
+        "date": "Sep 19, 2024",
+        "image": "./Images/sales-cloud-einstein.png"
+    },
+    {
+        "id": 13,
+        "title": "Introduction to Service Cloud Einstein",
+        "category": "Salesforce",
+        "date": "Sep 30, 2024",
+        "image": "./Images/service-cloud-einstein.png"
+    },
+    {
+        "id": 14,
+        "title": "Setting Up Einstein Article Recommendations in Service Cloud",
+        "category": "Salesforce",
+        "date": "Oct 9, 2024",
+        "image": "./Images/intro-to-article-recommendation.png"
+    },
+    {
+        "id": 15,
+        "title": "Setting Up Einstein Opportunity Scoring in Sales Cloud",
+        "category": "Salesforce",
+        "date": "Oct 17, 2024",
+        "image": "./Images/intro-to-einstein-opportunity-scoring.png"
+    }
+]
