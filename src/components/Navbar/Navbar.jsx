@@ -151,7 +151,7 @@ function Navbar() {
                     </a>
 
                     <a
-                        href="https://github.com/anujthakur04/"
+                        href="https://github.com/anujthakur04?tab=repositories"
                         className="flex items-center font-light cursor-pointer text-white hover:text-gray-200 transition"
                         target="_blank"
                         rel="noopener noreferrer"
