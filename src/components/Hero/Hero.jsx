@@ -11,7 +11,7 @@ const timelineElements = [
     {
         key: 1,
         icon: "work",
-        date: "November 2023",
+        date: "Nov 2023 - Nov 2024",
         title: "FormulaQ Solutions Pvt Ltd",
         location: "Hyderabad, Telangana",
         description: "Working on amazing projects!",
@@ -20,7 +20,7 @@ const timelineElements = [
     {
         key: 2,
         icon: "school",
-        date: "June 2023",
+        date: "Sep 2021 - Jun 2023",
         title: "Vivekananda Institute of Professional Studies",
         location: "Delhi",
         description: "Masters in Computer Applications.",
@@ -29,7 +29,7 @@ const timelineElements = [
     {
         key: 3,
         icon: "school",
-        date: "June 2021",
+        date: "Jul 2018 - Jun 2021",
         title: "Jagan Institute of Management Studies",
         location: "Delhi",
         description: "Bachelors in Computer Application.",
@@ -47,7 +47,7 @@ function Hero() {
     const carouselSlides = [
         { title: "Hello, Stalker!" },
         { title: "Welcome to My Portfolio!" },
-        { title: "Let's Explore Together!" },
+        { title: "Scroll Up to Know Me! " },
     ];
 
     useEffect(() => {
@@ -68,12 +68,12 @@ function Hero() {
                         <AnimatePresence mode="wait">
                             <motion.h1
                                 key={carouselSlides[carouselIndex].title}
-                                className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight"
-                                initial={{ opacity: 0, y: 30 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: -30 }}
+                                className="text-8xl sm:text-8xl md:text-8xl font-bold text-white leading-tight"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 1 }}
+                                exit={{ opacity: 0, y: -20 }}
                                 transition={{
-                                    duration: 0.4,
+                                    duration: 0.5,
                                     ease: "easeInOut",
                                 }}
                             >
@@ -131,8 +131,8 @@ function Hero() {
             {/* Timeline Section */}
             <ScrollPage page={2}>
                 <div className="w-full bg-gray-800 mx-auto">
-                    <h1 className="text-4xl font-bold text-white text-center mb-12 ">Timeline</h1>
-                    <Animator animation={textAnimation}>
+                    <h1 className="text-6xl font-bold text-white text-center mb-12 pt-4 pb-4">Timeline</h1>
+                    <Animator >
                         <VerticalTimeline className="mb-10">
                             {timelineElements.map((element) => {
                                 const isWorkIcon = element.icon === "work";

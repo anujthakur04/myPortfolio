@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        tealish: ' rgb(90,90,90)',
+        tealish: ' rgb(100,100,100)',
       },
     },
   },
