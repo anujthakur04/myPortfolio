@@ -9,7 +9,7 @@ function Contact() {
         setResult('Sending....');
         const formData = new FormData(event.target);
 
-        formData.append('access_key', '7aae4819-74bc-4337-9536-caf22d4bc11a');
+        formData.append('access_key', '94ec7ab8-09bc-4139-9f04-e8139bd02056');
 
         const response = await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
@@ -29,31 +29,30 @@ function Contact() {
 
     return (
         <>
-            <div className="mx-auto mt-32 max-w-5xl flex flex-col lg:flex-row items-center justify-between px-6 lg:px-0">
+            <div className="mx-auto mt-32 max-w-5xl flex flex-col lg:flex-row items-center justify-between px-6 lg:px-0 ">
                 <div className="mb-12 lg:mb-0 lg:pr-8">
                     <h1 className="font-bold text-[52px] mb-6 text-white leading-tight">
                         Hello there,<br /> Thanks for viewing <br /> my portfolio.
                     </h1>
                     <p className="font-light text-2xl mb-6 text-white">
-                        Email me at <a href="mailto:hello@formulaq.io" className="text-white-700 hover:underline">anujthakur462000@gmail.com</a>
+                        <strong>Email me at : </strong><a href="mailto:hello@formulaq.io" className="text-white-700 hover:underline">anujthakur462000@gmail.com</a>
                     </p>
                 </div>
                 <div className="w-full lg:w-1/2 bg-white p-8 shadow-lg rounded-lg">
                     <form onSubmit={onSubmit}>
-                        <label className="block mb-2 font-medium text-gray-700">Full name</label>
+                        <label className="block mb-2 font-medium text-gray-700">Full Name</label>
                         <input
                             type="text"
                             name="name"
-                            placeholder="Enter your name"
+                            placeholder="Enter your full name"
                             required
                             className="block w-full p-4 outline-none mb-6 mt-1 rounded-md border border-gray-300 focus:border-blue-500 transition"
                         />
-                        <label className="block mb-2 font-medium text-gray-700">Phone number</label>
+                        <label className="block mb-2 font-medium text-gray-700">Contact</label>
                         <input
-                            type="tel"
+                            type="number"
                             name="phone"
-                            placeholder="Enter your mobile number"
-                            required
+                            placeholder="E.g 9876543210"
                             className="block w-full  p-4 outline-none mb-6 mt-1 rounded-md border border-gray-300 focus:border-blue-500 transition"
                         />
                         <label className="block mb-2 font-medium text-gray-700">Write your message here</label>
