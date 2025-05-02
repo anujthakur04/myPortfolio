@@ -19,9 +19,9 @@ function Hero() {
     // Carousel state and logic
     const [carouselIndex, setCarouselIndex] = useState(0);
     const carouselSlides = [
-        { title: "Hello, Stalker!" },
-        // { title: "नमस्ते" },
-        { title: "Welcome to My Portfolio!" },
+        { title: "Hello" },
+        { title: "नमस्ते" },
+        { title: "My Name is Anuj Thakur" },
         { title: "Scroll Up to Know Me! " },
     ];
 
@@ -54,9 +54,9 @@ function Hero() {
                                 <motion.h1
                                     key={carouselSlides[carouselIndex].title}
                                     className="text-8xl sm:text-8xl md:text-8xl font-bold text-white leading-tight"
-                                    initial={{ opacity: 0, y: 20 }}
+                                    initial={{ opacity: 0, y: 70 }}
                                     animate={{ opacity: 1, y: 1 }}
-                                    exit={{ opacity: 0, y: -20 }}
+                                    exit={{ opacity: 0, y: -50 }}
                                     transition={{
                                         duration: 0.5,
                                         ease: "easeInOut",

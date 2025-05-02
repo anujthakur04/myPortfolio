@@ -32,7 +32,7 @@ function Contact() {
             <div className="mx-auto mt-32 max-w-5xl flex flex-col lg:flex-row items-center justify-between px-6 lg:px-0 ">
                 <div className="mb-12 lg:mb-0 lg:pr-8">
                     <h1 className="font-bold text-[52px] mb-6 text-white leading-tight">
-                        Hello there,<br /> Thanks for viewing <br /> my portfolio.
+                        Hello there,<br /> Thanks for viewing <br /> my profile
                     </h1>
                     <p className="font-light text-2xl mb-1rem text-violet-400">
                         <strong>Email me at : </strong><a href="mailto:anujthakur462000@gmail.com" className="text-white-700 hover:underline">anujthakur462000@gmail.com</a>
