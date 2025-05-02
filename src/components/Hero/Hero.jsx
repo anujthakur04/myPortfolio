@@ -132,13 +132,13 @@ function Hero() {
                                                 {element.location}
                                             </h5>
                                             <p id="description">{element.description}</p>
-                                            <href
+                                            <a
                                                 className={`text-violet-500 ${isWorkIcon ? "workButton" : "schoolButton"
                                                     }`}
                                                 onClick={() => handleViewMore(element.descriptionFull)}
                                             >
                                                 View More
-                                            </href>
+                                            </a>
                                         </VerticalTimelineElement>
                                     );
                                 })}
