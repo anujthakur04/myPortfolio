@@ -38,7 +38,8 @@ function Contact() {
                         <strong>Email me at : </strong><a href="mailto:anujthakur462000@gmail.com" className="text-white-700 hover:underline">anujthakur462000@gmail.com</a>
                     </p>
                     <p className="font-light text-2xl mb-6 text-violet-400">
-                        <strong>Phone no : </strong><a className="text-white-700 hover:underline">8130610133</a>
+                        <strong>Phone no : </strong><a className="text-white-700 hover:underline">
+                            +91 8130610133</a>
                     </p>
                 </div>
                 <div className="w-full lg:w-1/2 bg-white p-8 shadow-lg rounded-lg">

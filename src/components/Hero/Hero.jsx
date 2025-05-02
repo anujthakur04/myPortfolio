@@ -8,6 +8,7 @@ import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeli
 import "react-vertical-timeline-component/style.min.css";
 import Modal from '../Modal/modal.jsx'
 import data from './data.json'
+// import { title } from "process";
 
 
 function Hero() {
@@ -19,6 +20,7 @@ function Hero() {
     const [carouselIndex, setCarouselIndex] = useState(0);
     const carouselSlides = [
         { title: "Hello, Stalker!" },
+        // { title: "नमस्ते" },
         { title: "Welcome to My Portfolio!" },
         { title: "Scroll Up to Know Me! " },
     ];
@@ -101,7 +103,7 @@ function Hero() {
                 {/* Timeline Section */}
                 <ScrollPage page={2}>
                     <div className="w-full h-screen bg-gray-800 mx-auto overflow-y-scroll">
-                        <h1 className="text-6xl font-bold text-white text-center mb-12 pt-4 pb-4">
+                        <h1 className="text-6xl font-bold text-white text-center mb-12 pt-4">
                             Timeline
                         </h1>
                         <Animator>
