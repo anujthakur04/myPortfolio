@@ -34,8 +34,11 @@ function Contact() {
                     <h1 className="font-bold text-[52px] mb-6 text-white leading-tight">
                         Hello there,<br /> Thanks for viewing <br /> my portfolio.
                     </h1>
-                    <p className="font-light text-2xl mb-6 text-white">
-                        <strong>Email me at : </strong><a href="mailto:hello@formulaq.io" className="text-white-700 hover:underline">anujthakur462000@gmail.com</a>
+                    <p className="font-light text-2xl mb-1rem text-violet-400">
+                        <strong>Email me at : </strong><a href="mailto:anujthakur462000@gmail.com" className="text-white-700 hover:underline">anujthakur462000@gmail.com</a>
+                    </p>
+                    <p className="font-light text-2xl mb-6 text-violet-400">
+                        <strong>Phone no : </strong><a className="text-white-700 hover:underline">8130610133</a>
                     </p>
                 </div>
                 <div className="w-full lg:w-1/2 bg-white p-8 shadow-lg rounded-lg">
