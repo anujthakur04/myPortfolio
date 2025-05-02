@@ -1,0 +1,23 @@
+.workButton {
+    background-color: #06D6A0;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.workButton:hover {
+    background-color: #05c092;
+}
+
+.schoolButton {
+    background-color: #f9c74f;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.schoolButton:hover {
+    background-color: #e3b63e;
+}
