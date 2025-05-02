@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "company": "FormulaQ Solutions Pvt Ltd",
+        "title": "Software Developer",
+        "location": "Hyderabad, Telangana",
+        "description": "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
+        "descriptionFull": [
+            "Developed and deployed scalable web applications using JavaScript, React.js, and Redux, leveraging Context API, props, and Browser Router for seamless state management and efficient routing.",
+            "Lead front-end development projects with React.js, creating dynamic and responsive user interfaces that significantly increased user engagement and satisfaction.",
+            "Redesigned the company website with Tailwind CSS and React.js, reducing load times by 40%, improving accessibility standards, and boosting overall user satisfaction ratings by 25%.",
+            "Enhanced application security and data integrity by implementing tokenization techniques, reducing potential vulnerabilities.",
+            "Deployed and managed applications on Amazon EC2, configured S3 buckets for secure storage, and implemented automation, monitoring, and security measures to ensure scalability and optimal performance."
+        ],
+        "date": "Dec 2023 - Nov 2024",
+        "icon": "work"
+    },
+    {
+        "id": 2,
+        "company": "Remote Staffing",
+        "title": "Software Intern",
+        "location": "Remote",
+        "description": "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
+        "descriptionFull": "Developed and deployed scalable web applications using JavaScript, React.js, and Redux, leveraging Context API, props, and Browser Router for seamless state management and efficient routing. Lead front-end development projects with React.js, creating dynamic and responsive user interfaces that significantly increased user engagement and satisfaction.Redesigned the company website with Tailwind CSS and ReactJs, reducing load times by 40%, improving accessibility standards, and boosting overall user satisfaction ratings by 25%.Enhanced application security and data integrity by implementing tokenization techniques, reducing potential vulnerabilities.Deployed and managed applications on Amazon EC2, configured S3 buckets for secure storage, and implemented automation, monitoring, and security measures to ensure scalability and optimal performance.",
+        "date": "Apr 2023 - Sep 2023",
+        "icon": "work"
+    },
+    {
+        "id": 3,
+        "company": "Vivekananda Institute of Professional Studies",
+        "title": "Master of Computer Applications (9.2 CGPA)",
+        "location": "Delhi, India",
+        "description": "Online Course in Magical Beasts and Wonders of the World - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+        "date": "Sept 2021 - Jun 2023",
+        "icon": "school"
+    },
+    {
+        "id": 4,
+        "company": "Jagan Institute of Management Studies",
+        "title": "Bachelor of Computer Applications (7.5 CGPA)",
+        "location": "Delhi, India",
+        "description": "Online Course in Magical Beasts and Wonders of the World - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+        "date": "Jul 2018 - Jun 2021",
+        "icon": "school"
+    }
+]

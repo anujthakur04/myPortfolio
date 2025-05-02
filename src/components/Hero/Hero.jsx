@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import anuj from "../../assets/anujT.jpg";
 import { ScrollContainer, ScrollPage, Animator, batch, MoveIn, MoveOut, Fade, FadeIn, StickyIn, ZoomIn } from "react-scroll-motion";
-import workIcon from "./work.svg";
-import schoolIcon from "./school.svg";
+import workIcon from "../../assets/work.png";
+import schoolIcon from "../../assets/school.png";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Modal from '../Modal/modal.jsx'
@@ -114,7 +114,7 @@ function Hero() {
                                             date={element.date}
                                             dateClassName="date text-white"
                                             iconStyle={{
-                                                background: isWorkIcon ? "#06D6A0" : "#f9c74f",
+                                                background: isWorkIcon ? "#000000" : "#ffffff",
                                             }}
                                             icon={
                                                 <img
@@ -124,20 +124,21 @@ function Hero() {
                                                 />
                                             }
                                         >
-                                            <h3 className="vertical-timeline-element-title">
-                                                {element.title}
-                                            </h3>
+                                            <h2 className="font-bold vertical-timeline-element-title">
+                                                {element.company}
+                                            </h2>
+                                            <h4 className="font-medium vertical-timeline-element-subtitle">{element.title}</h4>
                                             <h5 className="vertical-timeline-element-subtitle">
                                                 {element.location}
                                             </h5>
                                             <p id="description">{element.description}</p>
-                                            <button
-                                                className={`button ${isWorkIcon ? "workButton" : "schoolButton"
+                                            <href
+                                                className={`text-violet-500 ${isWorkIcon ? "workButton" : "schoolButton"
                                                     }`}
-                                                onClick={() => handleViewMore(element.description)}
+                                                onClick={() => handleViewMore(element.descriptionFull)}
                                             >
                                                 View More
-                                            </button>
+                                            </href>
                                         </VerticalTimelineElement>
                                     );
                                 })}
