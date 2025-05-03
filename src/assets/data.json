@@ -21,7 +21,10 @@
         "title": "Software Intern",
         "location": "Remote",
         "description": "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
-        "descriptionFull": "Developed and deployed scalable web applications using JavaScript, React.js, and Redux, leveraging Context API, props, and Browser Router for seamless state management and efficient routing. Lead front-end development projects with React.js, creating dynamic and responsive user interfaces that significantly increased user engagement and satisfaction.Redesigned the company website with Tailwind CSS and ReactJs, reducing load times by 40%, improving accessibility standards, and boosting overall user satisfaction ratings by 25%.Enhanced application security and data integrity by implementing tokenization techniques, reducing potential vulnerabilities.Deployed and managed applications on Amazon EC2, configured S3 buckets for secure storage, and implemented automation, monitoring, and security measures to ensure scalability and optimal performance.",
+        "descriptionFull": [
+            "First point",
+            "Second point"
+        ],
         "date": "Apr 2023 - Sep 2023",
         "icon": "work"
     },

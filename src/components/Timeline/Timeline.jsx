@@ -18,8 +18,8 @@ function Timeline() {
     };
     return (
         <div className="w-full h-auto bg-gray-800 mx-auto overflow-hidden">
-            <h1 className="text-6xl font-bold text-white text-center mb-12 pt-4">
-                Timeline
+            <h1 className="text-6xl font-bold text-white text-center mb-12 pt-4 mt-2">
+
             </h1>
             <Animator>
                 <VerticalTimeline className="mb-[20px]">
