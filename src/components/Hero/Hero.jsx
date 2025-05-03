@@ -2,13 +2,8 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import anuj from "../../assets/anujT.jpg";
 import { ScrollContainer, ScrollPage, Animator, batch, MoveIn, MoveOut, Fade, FadeIn, StickyIn, ZoomIn } from "react-scroll-motion";
-import workIcon from "../../assets/work.png";
-import schoolIcon from "../../assets/school.png";
-import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import Modal from '../Modal/modal.jsx'
-import data from './data.json'
-// import { title } from "process";
+
 
 
 function Hero() {
@@ -21,7 +16,7 @@ function Hero() {
     const carouselSlides = [
         { title: "Hello" },
         { title: "नमस्ते" },
-        { title: "My Name is Anuj Thakur" },
+        { title: "ನಮಸ್ಕಾರ" },
         { title: "Scroll Up to Know Me! " },
     ];
 
@@ -32,15 +27,6 @@ function Hero() {
 
         return () => clearInterval(interval); // Cleanup interval on component unmount
     }, [carouselSlides.length]);
-
-
-    const [isModalOpen, setModalOpen] = useState(false);
-    const [modalContent, setModalContent] = useState("");
-
-    const handleViewMore = (description) => {
-        setModalContent(description);
-        setModalOpen(true);
-    };
 
     return (
         <div >
@@ -55,7 +41,7 @@ function Hero() {
                                     key={carouselSlides[carouselIndex].title}
                                     className="text-8xl sm:text-8xl md:text-8xl font-bold text-white leading-tight"
                                     initial={{ opacity: 0, y: 70 }}
-                                    animate={{ opacity: 1, y: 1 }}
+                                    animate={{ opacity: 0.8, y: 1 }}
                                     exit={{ opacity: 0, y: -50 }}
                                     transition={{
                                         duration: 0.5,
@@ -97,58 +83,6 @@ function Hero() {
                                 />
                             </div>
                         </Animator>
-                    </div>
-                </ScrollPage>
-
-                {/* Timeline Section */}
-                <ScrollPage page={2}>
-                    <div className="w-full h-screen bg-gray-800 mx-auto overflow-y-scroll">
-                        <h1 className="text-6xl font-bold text-white text-center mb-12 pt-4">
-                            Timeline
-                        </h1>
-                        <Animator>
-                            <VerticalTimeline className="mb-10">
-                                {data.map((element) => {
-                                    const isWorkIcon = element.icon === "work";
-                                    return (
-                                        <VerticalTimelineElement
-                                            key={element.key}
-                                            date={element.date}
-                                            dateClassName="date text-white"
-                                            iconStyle={{
-                                                background: isWorkIcon ? "#000000" : "#ffffff",
-                                            }}
-                                            icon={
-                                                <img
-                                                    src={isWorkIcon ? workIcon : schoolIcon}
-                                                    alt="icon"
-                                                    style={{ width: "100%", height: "100%" }}
-                                                />
-                                            }
-                                        >
-                                            <h2 className="font-bold vertical-timeline-element-title">
-                                                {element.company}
-                                            </h2>
-                                            <h4 className="font-medium vertical-timeline-element-subtitle">{element.title}</h4>
-                                            <h5 className="vertical-timeline-element-subtitle">
-                                                {element.location}
-                                            </h5>
-                                            <p id="description">{element.description}</p>
-                                            <a
-                                                className={`text-violet-500 ${isWorkIcon ? "workButton" : "schoolButton"
-                                                    }`}
-                                                onClick={() => handleViewMore(element.descriptionFull)}
-                                            >
-                                                View More
-                                            </a>
-                                        </VerticalTimelineElement>
-                                    );
-                                })}
-                            </VerticalTimeline>
-                        </Animator>
-                        <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}>
-                            <p>{modalContent}</p>
-                        </Modal>
                     </div>
                 </ScrollPage>
             </ScrollContainer>
