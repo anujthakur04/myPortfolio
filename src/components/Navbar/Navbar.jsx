@@ -9,12 +9,12 @@ function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const navigate = useNavigate();
     const location = useLocation();
-    const [scrollTarget, setScrollTarget] = useState(null); // State to store the target section to scroll to
-    const offset = 260; // Set the offset height (in pixels) to stop before the section
+    const [scrollTarget, setScrollTarget] = useState(null);
+    const offset = 260;
 
     useEffect(() => {
         const handleScroll = () => {
-            setActive(window.scrollY > 80); // Adds a class when scrolled
+            setActive(window.scrollY > 80);
         };
         window.addEventListener('scroll', handleScroll);
         return () => {
@@ -26,7 +26,7 @@ function Navbar() {
         setIsContactPage(location.pathname !== '/');
     }, [location]);
 
-    // Scroll to the target section when on the home page with offset
+
     useEffect(() => {
         if (location.pathname === '/' && scrollTarget) {
             const element = document.getElementById(scrollTarget);
@@ -34,20 +34,19 @@ function Navbar() {
                 const elementPosition = element.getBoundingClientRect().top + window.scrollY - offset;
                 window.scrollTo({ top: elementPosition, behavior: 'smooth' });
             }
-            setScrollTarget(null); // Reset the scroll target after scrolling
+            setScrollTarget(null);
         }
     }, [location.pathname, scrollTarget]);
 
     const handleNavigateHome = (sectionId) => {
         if (location.pathname === '/') {
-            // If already on home page, scroll directly with offset
+
             const element = document.getElementById(sectionId);
             if (element) {
                 const elementPosition = element.getBoundingClientRect().top + window.scrollY - offset;
                 window.scrollTo({ top: elementPosition, behavior: 'smooth' });
             }
         } else {
-            // Set the section to scroll after navigation
             setScrollTarget(sectionId);
             navigate('/');
         }
@@ -55,12 +54,12 @@ function Navbar() {
 
     const handleNavigateContact = () => {
         navigate('/contact');
-        toggleMenu(); // Close the menu after navigation
+        toggleMenu();
     };
 
-    const handleNavigateBlog = () => {
+    const handleNavigateProject = () => {
         navigate('/projects');
-        toggleMenu(); // Close the menu after navigation
+        toggleMenu();
     };
 
     const navbarBgColor = isContactPage || active ? 'bg-tealish' : 'bg-transparent';
@@ -123,14 +122,11 @@ function Navbar() {
                     </div>
                 </div>
 
-                {/* Mobile Menu Icon */}
                 <div className="lg:hidden">
                     <button onClick={toggleMenu} className="text-white focus:outline-none">
                         {isMenuOpen ? <FiX size={20} /> : <FiMenu size={20} />}
                     </button>
                 </div>
-
-                {/* Nav Menu */}
                 <ul
                     className={`lg:flex lg:flex-row lg:space-x-8 items-center ${isMenuOpen ? "flex" : "hidden"
                         }
@@ -180,9 +176,9 @@ function Navbar() {
 
                     <li
                         className="relative group font-light cursor-pointer text-white hover:text-gray-200 transition"
-                        onClick={handleNavigateBlog}
+                        onClick={handleNavigateProject}
                     >
-                        <span>Projects</span>
+                        Projects
                     </li>
 
                     <li>
