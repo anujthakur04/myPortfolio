@@ -85,15 +85,15 @@ function Hero() {
 
                 {/* Second Page */}
                 <ScrollPage page={1}>
-                    <div className="w-full h-full bg-gray-900 pl-[17%] overflow-hidden mb-4">
+                    <div className="w-full h-full bg-gray-900 pl-[9%] overflow-hidden mb-4">
                         <h1 className="text-6xl font-bold text-white text-center mb-14 pt-4 mt-2 mr-[250px]">
 
                         </h1>
-                        <div className="w-[80%] h-[80%] bg-gray-700 flex items-center justify-between px-12">
+                        <div className="w-[90%] h-[80%] bg-gray-700 flex items-center justify-between px-12">
 
                             <Animator>
                                 <div className="w-full h-full text-left mr-20">
-                                    <h4 className="text-2xl font-normal text-justify text-white leading-relaxed" >
+                                    <h4 className="text-[26px] font-normal text-justify text-white leading-relaxed" >
                                         {displayedText}
                                     </h4>
                                 </div>
