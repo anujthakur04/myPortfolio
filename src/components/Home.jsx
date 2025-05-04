@@ -9,12 +9,8 @@ function Home() {
     return (
         <div>
             <Hero />
-            {/* <Footer /> */}
             <Timeline />
             <Footer />
-            {/* <div className="container mx-auto">
-
-            </div> */}
         </div>
     )
 }

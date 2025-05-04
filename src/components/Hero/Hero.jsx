@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import anuj from "../../assets/anujT.jpg";
-import { ScrollContainer, ScrollPage, Animator, batch, MoveIn, MoveOut, Fade, FadeIn, StickyIn, ZoomIn } from "react-scroll-motion";
+import { ScrollContainer, ScrollPage, Animator } from "react-scroll-motion";
 import "react-vertical-timeline-component/style.min.css";
 
 
 
 function Hero() {
-    const imageAnimation = batch(Fade(), MoveIn(1000, 0), MoveOut(0, 0)); // Image moves right
-    const textAnimation = batch(Fade(), MoveIn(-1000, 0), MoveOut(0, 0)); // Text moves left
-    const zoomInScroll = batch(StickyIn(), FadeIn(), ZoomIn());
 
-    // Carousel state and logic
     const [carouselIndex, setCarouselIndex] = useState(0);
+    const [displayedText, setDisplayedText] = useState('');
+    const [textIndex, setTextIndex] = useState(0);
+    const [shouldStart, setShouldStart] = useState(false);
+
     const carouselSlides = [
         { title: "Hello" },
         { title: "नमस्ते" },
@@ -23,18 +23,46 @@ function Hero() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCarouselIndex((prevIndex) => (prevIndex + 1) % carouselSlides.length);
-        }, 3000); // Auto-switch every 3 seconds
+        }, 2000);
 
-        return () => clearInterval(interval); // Cleanup interval on component unmount
+        return () => clearInterval(interval);
     }, [carouselSlides.length]);
+
+    const text = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                    took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries, but also the leap into electronic typesetting. took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries, but also the leap into electronic typesetting`;
+
+    const characters = text.split("");
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 80) {
+                setShouldStart(true);
+            }
+        };
+        window.addEventListener('scroll', handleScroll)
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [])
+
+    useEffect(() => {
+        if (shouldStart && textIndex < characters.length) {
+            const timer = setTimeout(() => {
+                setDisplayedText((prevText) => prevText + characters[textIndex]);
+                setTextIndex(textIndex + 1);
+            }, 25);
+            return () => clearTimeout(timer);
+        }
+    }, [shouldStart, textIndex, characters]);
 
     return (
         <div >
             <ScrollContainer>
-                {/* First Page with Carousel */}
                 <ScrollPage page={0}>
                     <div className="w-full h-screen bg-gray-800 flex items-center justify-center">
-                        {/* Carousel with Animation */}
                         <div className="text-center">
                             <AnimatePresence mode="wait">
                                 <motion.h1
@@ -57,36 +85,39 @@ function Hero() {
 
                 {/* Second Page */}
                 <ScrollPage page={1}>
-                    <div className="w-full h-screen bg-gray-900 flex items-center justify-between px-12">
-                        {/* Text (moves left) */}
-                        <Animator animation={textAnimation}>
-                            <div className="w-auto text-left m-20">
-                                <h1 className="text-xl sm:text-2xl md:text-3xl font-medium text-white leading-relaxed">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                    has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                                    took a galley of type and scrambled it to make a type specimen book. It has survived not
-                                    only five centuries, but also the leap into electronic typesetting.
-                                </h1>
-                            </div>
-                        </Animator>
+                    <div className="w-full h-full bg-gray-900 pl-[17%] overflow-hidden mb-4">
+                        <h1 className="text-6xl font-bold text-white text-center mb-14 pt-4 mt-2 mr-[250px]">
 
-                        {/* Image (moves right) */}
-                        <Animator animation={imageAnimation}>
-                            <div
-                                className="flex items-center justify-center m-20"
-                                style={{ width: "400px", height: "400px" }}
-                            >
-                                <img
-                                    src={anuj}
-                                    alt="Photo"
-                                    className="w-full h-full object-cover rounded-xl shadow-lg"
-                                />
-                            </div>
-                        </Animator>
+                        </h1>
+                        <div className="w-[80%] h-[80%] bg-gray-700 flex items-center justify-between px-12">
+
+                            <Animator>
+                                <div className="w-full h-full text-left mr-20">
+                                    <h4 className="text-2xl font-normal text-justify text-white leading-relaxed" >
+                                        {displayedText}
+                                    </h4>
+                                </div>
+                            </Animator>
+
+                            <Animator>
+                                <div
+
+                                    className="flex items-center justify-center ml-20"
+                                    style={{ width: "400px", height: "400px" }}
+                                >
+                                    <div style={{ width: '1px', backgroundColor: '#1f1f1f', height: '70%', marginRight: '35px' }}></div>
+                                    <img
+                                        src={anuj}
+                                        alt="Photo"
+                                        className="w-full h-full object-cover rounded-xl shadow-lg"
+                                    />
+                                </div>
+                            </Animator>
+                        </div>
                     </div>
                 </ScrollPage>
             </ScrollContainer>
-        </div>
+        </div >
     );
 }
 
