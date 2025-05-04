@@ -15,8 +15,7 @@ function Hero() {
 
     const carouselSlides = [
         { title: "Hello" },
-        { title: "नमस्ते" },
-        { title: "ನಮಸ್ಕಾರ" },
+        { title: "How are you?" },
         { title: "Scroll Up to Know Me! " },
     ];
 
@@ -28,11 +27,11 @@ function Hero() {
         return () => clearInterval(interval);
     }, [carouselSlides.length]);
 
-    const text = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                    has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                    took a galley of type and scrambled it to make a type specimen book. It has survived not
-                    only five centuries, but also the leap into electronic typesetting. took a galley of type and scrambled it to make a type specimen book. It has survived not
-                    only five centuries, but also the leap into electronic typesetting`;
+    const text = `I’m Anuj Thakur, a passionate Computer Science professional with a strong background in Python, JavaScript, and C++, and experience working with frameworks like React.js and Django.
+
+I’ve worked on data structures, algorithms, OOP, and database management (SQL, MongoDB), and I enjoy solving challenges and building scalable, user-friendly solutions. I also have hands-on experience with AWS services like EC2 and S3.
+
+I’m excited to apply my skills to real-world problems and create impactful solutions. Let’s connect and chat more about how we can work together!`;
 
     const characters = text.split("");
 
@@ -53,7 +52,7 @@ function Hero() {
             const timer = setTimeout(() => {
                 setDisplayedText((prevText) => prevText + characters[textIndex]);
                 setTextIndex(textIndex + 1);
-            }, 25);
+            }, 20);
             return () => clearTimeout(timer);
         }
     }, [shouldStart, textIndex, characters]);
@@ -67,7 +66,7 @@ function Hero() {
                             <AnimatePresence mode="wait">
                                 <motion.h1
                                     key={carouselSlides[carouselIndex].title}
-                                    className="text-8xl sm:text-8xl md:text-8xl font-bold text-white leading-tight"
+                                    className="text-8xl sm:text-8xl md:text-8xl font-bold text-gray-300 leading-tight"
                                     initial={{ opacity: 0, y: 70 }}
                                     animate={{ opacity: 0.8, y: 1 }}
                                     exit={{ opacity: 0, y: -50 }}
@@ -93,7 +92,7 @@ function Hero() {
 
                             <Animator>
                                 <div className="w-full h-full text-left mr-20">
-                                    <h4 className="text-[26px] font-normal text-justify text-white leading-relaxed" >
+                                    <h4 className="text-[26px] font-normal text-justify text-gray-300 leading-relaxed" >
                                         {displayedText}
                                     </h4>
                                 </div>
