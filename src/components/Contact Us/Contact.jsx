@@ -35,10 +35,10 @@ function Contact() {
                         Hello there,<br /> Thanks for viewing <br /> my profile
                     </h1>
                     <p className="font-light text-2xl mb-1rem text-violet-400">
-                        <strong>Email me at : </strong><a href="mailto:anujthakur462000@gmail.com" className="text-white-700 hover:underline">anujthakur462000@gmail.com</a>
+                        <strong>Email : </strong><a href="mailto:anujthakur462000@gmail.com" className="text-violet-600 hover:underline">anujthakur462000@gmail.com</a>
                     </p>
                     <p className="font-light text-2xl mb-6 text-violet-400">
-                        <strong>Phone no : </strong><a className="text-white-700 hover:underline">
+                        <strong>Phone no : </strong><a className="text-violet-600 hover:underline">
                             +91 8130610133</a>
                     </p>
                 </div>

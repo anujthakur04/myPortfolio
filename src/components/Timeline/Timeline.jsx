@@ -3,7 +3,7 @@ import workIcon from "../../assets/work.png";
 import schoolIcon from "../../assets/school.png";
 import { Animator } from 'react-scroll-motion';
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+// import "react-vertical-timeline-component/style.min.css";
 import Modal from '../Modal/modal.jsx'
 import data from '../../assets/data.json'
 
@@ -19,7 +19,7 @@ function Timeline() {
     return (
         <div className="w-full h-auto bg-gray-800 mx-auto overflow-hidden">
             <h1 className="text-6xl font-bold text-white text-center mb-12 pt-4 mt-2">
-
+                My Journey
             </h1>
             <Animator>
                 <VerticalTimeline className="mb-[20px]">
@@ -48,7 +48,7 @@ function Timeline() {
                                 <h5 className="vertical-timeline-element-subtitle">
                                     {element.location}
                                 </h5>
-                                <p id="description">{element.description}</p>
+                                <h6 className='font-semibold mt-4'>{element.description}</h6>
                                 <a
                                     className={`text-violet-500 ${isWorkIcon ? "workButton" : "schoolButton"
                                         }`}

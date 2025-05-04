@@ -4,7 +4,7 @@
         "company": "FormulaQ Solutions Pvt Ltd",
         "title": "Software Developer",
         "location": "Hyderabad, Telangana",
-        "description": "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
+        "description": "Tech stack: React.js, JavaScript, Python, Vite, Redux, Tailwind CSS, Bootstrap, AWS ",
         "descriptionFull": [
             "Developed and deployed scalable web applications using JavaScript, React.js, and Redux, leveraging Context API, props, and Browser Router for seamless state management and efficient routing.",
             "Lead front-end development projects with React.js, creating dynamic and responsive user interfaces that significantly increased user engagement and satisfaction.",
@@ -20,7 +20,7 @@
         "company": "Remote Staffing",
         "title": "Software Intern",
         "location": "Remote",
-        "description": "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
+        "description": "Tech Stack: JavaScript, DOM Manipulation, CSS, Node.js ",
         "descriptionFull": [
             "First point",
             "Second point"
@@ -31,18 +31,26 @@
     {
         "id": 3,
         "company": "Vivekananda Institute of Professional Studies",
-        "title": "Master of Computer Applications (9.2 CGPA)",
+        "title": "Master of Computer Applications",
         "location": "Delhi, India",
-        "description": "Online Course in Magical Beasts and Wonders of the World - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+        "description": "9.2 CGPA",
+        "descriptionFull": [
+            "First point",
+            "Second point"
+        ],
         "date": "Sept 2021 - Jun 2023",
         "icon": "school"
     },
     {
         "id": 4,
         "company": "Jagan Institute of Management Studies",
-        "title": "Bachelor of Computer Applications (7.5 CGPA)",
+        "title": "Bachelor of Computer Applications",
         "location": "Delhi, India",
-        "description": "Online Course in Magical Beasts and Wonders of the World - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+        "description": "7.5 CGPA",
+        "descriptionFull": [
+            "First point",
+            "Second point"
+        ],
         "date": "Jul 2018 - Jun 2021",
         "icon": "school"
     }
