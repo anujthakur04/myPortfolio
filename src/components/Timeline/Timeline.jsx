@@ -1,9 +1,9 @@
 import { React, useState } from 'react'
 import workIcon from "../../assets/work.png";
 import schoolIcon from "../../assets/school.png";
-import { Animator } from 'react-scroll-motion';
+import { Animator, Fade } from 'react-scroll-motion';
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-// import "react-vertical-timeline-component/style.min.css";
+import "react-vertical-timeline-component/style.min.css";
 import Modal from '../Modal/modal.jsx'
 import data from '../../assets/data.json'
 

@@ -22,8 +22,8 @@
         "location": "Remote",
         "description": "Tech Stack: JavaScript, DOM Manipulation, CSS, Node.js ",
         "descriptionFull": [
-            "First point",
-            "Second point"
+            "Worked extensively with core JavaScript and DOM manipulation to develop dynamic and interactive web interfaces",
+            "Strengthened my understanding of modern web development principles and enhanced my problem-solving skills in building efficient and engaging user interfaces."
         ],
         "date": "Apr 2023 - Sep 2023",
         "icon": "work"
@@ -35,8 +35,11 @@
         "location": "Delhi, India",
         "description": "9.2 CGPA",
         "descriptionFull": [
-            "First point",
-            "Second point"
+            "Data Structure and Algorithm",
+            "Data Analysis and Statistics",
+            "Machine Learning",
+            "Object Oriented Programming",
+            "Database Management System"
         ],
         "date": "Sept 2021 - Jun 2023",
         "icon": "school"
@@ -48,8 +51,11 @@
         "location": "Delhi, India",
         "description": "7.5 CGPA",
         "descriptionFull": [
-            "First point",
-            "Second point"
+            "Web Technologies",
+            "Operating Systems",
+            "Web Development",
+            "Computer Architecture",
+            "Networking"
         ],
         "date": "Jul 2018 - Jun 2021",
         "icon": "school"

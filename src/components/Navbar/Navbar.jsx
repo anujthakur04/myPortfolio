@@ -80,13 +80,13 @@ function Navbar() {
 
     const handleDownload = () => {
         const link = document.createElement("a");
-        link.href = './public/Resume_Anuj_Thakur_DEV.pdf'; // Replace with the actual path to your PDF file
-        link.download = "Resume-AnujThakur.pdf"; // Name of the downloaded file
+        link.href = './public/Resume_Anuj_Thakur_DEV.pdf';
+        link.download = "Resume-AnujThakur.pdf";
         link.click();
     };
 
     const handleViewOnline = () => {
-        window.open("https://drive.google.com/file/d/1r3XEmeC-8qtYIQvfTAPJtgKeidoYZOFk/view", "_blank"); // Replace with your Google Drive link
+        window.open("https://drive.google.com/file/d/1r3XEmeC-8qtYIQvfTAPJtgKeidoYZOFk/view", "_blank");
     };
 
 
@@ -107,7 +107,7 @@ function Navbar() {
                             onClick={() => handleNavigateHome()}
                         />
                     </div>
-                    <div className="absolute top-full left-1/2 transform -translate-x-1/2 hidden group-hover:flex flex-col bg-white border rounded-lg shadow-lg mt-1 p-2 w-48 transition delay-200">
+                    <div className="absolute top-full left-1/2 transform -translate-x-1/2 hidden group-hover:flex flex-col bg-white border rounded-lg shadow-lg ml-[80px] mt-1 p-2 w-48 transition delay-200">
                         <button
                             onClick={handleViewOnline}
                             className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded"

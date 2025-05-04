@@ -27,9 +27,9 @@ function Hero() {
         return () => clearInterval(interval);
     }, [carouselSlides.length]);
 
-    const text = `I’m Anuj Thakur, a passionate Computer Science professional with a strong background in Python, JavaScript, and C++, and experience working with frameworks like React.js and Django.
+    const text = `I’m Anuj Thakur, a passionate Computer Science professional with a strong background in fronend Development (Javascript, React.js, Redux etc) and experience working in Python with frameworks like Django.
 
-I’ve worked on data structures, algorithms, OOP, and database management (SQL, MongoDB), and I enjoy solving challenges and building scalable, user-friendly solutions. I also have hands-on experience with AWS services like EC2 and S3.
+I’ve worked on data structures, algorithms, OOP, and database management (PostgreSQL), and I enjoy solving challenges and building scalable, user-friendly solutions. I also have hands-on experience with AWS services like EC2 and S3.
 
 I’m excited to apply my skills to real-world problems and create impactful solutions. Let’s connect and chat more about how we can work together!`;
 
@@ -66,7 +66,7 @@ I’m excited to apply my skills to real-world problems and create impactful sol
                             <AnimatePresence mode="wait">
                                 <motion.h1
                                     key={carouselSlides[carouselIndex].title}
-                                    className="text-8xl sm:text-8xl md:text-8xl font-bold text-gray-300 leading-tight"
+                                    className="text-6xl sm:text-6xl md:text-[80px] font-bold text-gray-400 leading-tight"
                                     initial={{ opacity: 0, y: 70 }}
                                     animate={{ opacity: 0.8, y: 1 }}
                                     exit={{ opacity: 0, y: -50 }}
@@ -84,15 +84,12 @@ I’m excited to apply my skills to real-world problems and create impactful sol
 
                 {/* Second Page */}
                 <ScrollPage page={1}>
-                    <div className="w-full h-full bg-gray-900 pl-[9%] overflow-hidden mb-4">
-                        <h1 className="text-6xl font-bold text-white text-center mb-14 pt-4 mt-2 mr-[250px]">
-
-                        </h1>
-                        <div className="w-[90%] h-[80%] bg-gray-700 flex items-center justify-between px-12">
+                    <div className="w-full h-full bg-gray-900 pl-[9%] overflow-hidden mb-14 pt-[120px]  mr-[250px] pt-4">
+                        <div className="w-[90%] h-[80%] sm:bg-gray-700 flex items-center justify-between px-12">
 
                             <Animator>
                                 <div className="w-full h-full text-left mr-20">
-                                    <h4 className="text-[26px] font-normal text-justify text-gray-300 leading-relaxed" >
+                                    <h4 className="text-[18px] sm:text-[26px] font-normal text-left text-gray-300 leading-relaxed">
                                         {displayedText}
                                     </h4>
                                 </div>
@@ -101,7 +98,7 @@ I’m excited to apply my skills to real-world problems and create impactful sol
                             <Animator>
                                 <div
 
-                                    className="flex items-center justify-center ml-20"
+                                    className="flex items-center justify-center ml-20 max-xl:hidden"
                                     style={{ width: "400px", height: "400px" }}
                                 >
                                     <div style={{ width: '1px', backgroundColor: '#1f1f1f', height: '70%', marginRight: '35px' }}></div>
