@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import sprsh from '../../assets/sprsh.png';
 import port from '../../assets/port.png';
 import Snappy from '../../assets/snappy.png';
-import Footer from '../Footer/Footer'
 
 const projects = [
     {

@@ -1,5 +1,4 @@
 import React from "react";
-// import data from '../../assets/cross.png'
 
 const Modal = ({ isOpen, onClose, children }) => {
     if (!isOpen) return null;

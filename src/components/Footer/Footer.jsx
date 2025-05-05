@@ -1,7 +1,5 @@
 import React from 'react';
 import { FaLocationArrow, FaPhoneAlt, FaEnvelope, FaLinkedin, FaGithub, FaCode } from 'react-icons/fa';
-import { MdLocationOn } from 'react-icons/md';
-import footUp from '../../assets/quoteUp.png'
 
 function Footer() {
     return (
@@ -26,8 +24,6 @@ function Footer() {
                 </div>
             </div>
 
-
-            {/* Copyright and Social Links */}
             <div className="container mx-auto px-4 mt-8 flex flex-col md:flex-row justify-between items-center border-t border-gray-700 pt-4">
                 <div className="text-sm text-gray-500 mb-4 md:mb-0">
                     &copy; Anuj Thakur
