@@ -89,7 +89,7 @@ I’m excited to apply my skills to real-world problems and create impactful sol
 
                             <Animator>
                                 <div className="w-full h-full text-left mr-20">
-                                    <h4 className="text-[18px] sm:text-[26px] font-normal text-left text-gray-300 leading-relaxed">
+                                    <h4 className="text-[16px] sm:text-[24px] font-normal text-left text-gray-300 leading-relaxed">
                                         {displayedText}
                                     </h4>
                                 </div>

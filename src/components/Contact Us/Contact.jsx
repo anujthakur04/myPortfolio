@@ -68,7 +68,7 @@ function Contact() {
                         ></textarea>
                         <button
                             type="submit"
-                            className="flex items-center justify-center bg-tealish text-white font-medium py-3 px-6 rounded-md hover:bg-[#1b2a7d] transition duration-300"
+                            className="flex items-center justify-center bg-violet-500 text-white font-medium py-3 px-6 rounded-md hover:bg-violet-800 transition duration-300"
                         >
                             Send message
                         </button>
