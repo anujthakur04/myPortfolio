@@ -8,7 +8,7 @@ const projects = [
     {
         name: "Sprsh",
         photo: sprsh,
-        description: `Developed "sprsh," a modern MERN-stack blogging platform with a responsive React frontend, secure Node.js backend, and features like rich text editing, real-time comments, and social sharing.`,
+        description: `Developed "sprsh", a modern MERN-stack blogging platform with a responsive React frontend, secure Node.js backend, and features like rich text editing, real-time comments, and social sharing.`,
         link: "https://www.sprsh.com/",
     },
     {
@@ -20,7 +20,7 @@ const projects = [
     {
         name: "My Portfolio",
         photo: port,
-        description: "Built my very own portfolio in react using vite framework, framer motion, react scroll motion, modal and tailwind css for rich design. It has various functionalities and features. ",
+        description: "Developed a personal portfolio using React with the Vite framework, integrating Framer Motion, React Scroll Motion, modals, and Tailwind CSS for a feature-rich, visually appealing design. ",
         link: "https://github.com/anujthakur04/myPortfolio/tree/myPort-1",
     }
 ];
@@ -38,8 +38,8 @@ const Projects = () => {
                     >
                         <h2 className="text-2xl sm:text-3xl font-bold mb-4">{project.name}</h2>
                         <div className="w-full space-y-4">
-                            <p className="text-gray-600 text-sm sm:text-base mb-4">{project.description}</p>
-                            <img src={project.photo} alt="Photo" className="w-full sm:w-[400px] max-w-full h-auto rounded-md" />
+                            <p className=" w-full md:w-[400px] max-w-full text-gray-600 text-sm sm:text-base mb-4">{project.description}</p>
+                            <img src={project.photo} alt="Photo" className="w-full sm:w-[400px] max-w-full sm:h-[200px] h-auto rounded-md" />
                         </div>
 
                         <button
