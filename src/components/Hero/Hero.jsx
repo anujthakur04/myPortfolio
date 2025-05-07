@@ -27,11 +27,10 @@ function Hero() {
         return () => clearInterval(interval);
     }, [carouselSlides.length]);
 
-    const text = `I’m Anuj Thakur, a passionate Computer Science professional with a strong background in fronend Development (Javascript, React.js, Redux etc) and experience working in Python with frameworks like Django.
+    const text = `I’m Anuj Thakur,a passionate Computer Science professional with a strong background in frontend Development (JavaScript, React.js, Redux MobX etc) and some experience working in Python with frameworks like Django.
 
 I’ve worked on data structures, algorithms, OOP, and database management (PostgreSQL), and I enjoy solving challenges and building scalable, user-friendly solutions. I also have hands-on experience with AWS services like EC2 and S3.
-
-I’m excited to apply my skills to real-world problems and create impactful solutions. Let’s connect and chat more about how we can work together!`;
+I’m excited to apply my skills to real-world problems and create impactful solutions.`;
 
     const characters = text.split("");
 
